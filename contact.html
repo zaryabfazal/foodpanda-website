@@ -1,0 +1,511 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+        <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <!-- Bootstrap Icon Link -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
+    <!-- Animation Link -->
+     <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link rel="shortcut icon" href="./assets/Technical Education & Vocational Training Authority (TEVTA) – Technical Education & Vocational Training Authority (TEVTA)_files/tevta_header_logo.png" type="image/x-icon">
+    <title>Foodpanda | Contact</title>
+</head>
+<style>
+     * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* NAV */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 40px;
+  background: #fff;
+  position: relative;
+  z-index: 10;
+}
+
+div.contact img{
+  width: 100%;
+}
+
+
+.logo img {
+  height: 32px;
+}
+
+.nav-links a {
+  margin: 0 12px;
+  text-decoration: none;
+  color: #000;
+  font-size: 14px;
+  font-weight: bold;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.nav-right {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.location-btn {
+  background: #ff2b85;
+  color: #fff;
+  border: none;
+  padding: 15px 20px 15px 20px;
+  border-radius: 24px;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+.location-btn:hover {
+  background: #eb5b99;
+}
+.search i {
+  font-size: 20px;
+}
+
+
+
+.main {
+  margin: 0;
+  padding: 40px;
+  background: #ffffff;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: auto;
+}
+
+/* FORM */
+.form-section {
+  width: 55%;
+}
+
+h2 {
+  margin-bottom: 30px;
+  font-size: 24px;
+}
+
+label {
+  display: block;
+  margin-top: 20px;
+  margin-bottom: 8px;
+  font-weight: bold;
+}
+
+label span {
+  color: #e91e63;
+}
+
+input,
+textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #b5bfd4;
+  border-radius: 6px;
+  font-size: 14px;
+}
+
+textarea {
+  resize: none;
+}
+
+.name-fields {
+  display: flex;
+  gap: 20px;
+}
+
+.name-fields div {
+  width: 100%;
+}
+
+small {
+  display: block;
+  margin-top: 6px;
+  font-size: 12px;
+  color: #555;
+}
+
+button {
+  margin-top: 30px;
+  padding: 12px 28px;
+  background: #ff2b7a;
+  color: #fff;
+  border: none;
+  border-radius: 30px;
+  font-size: 15px;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #e81f6b;
+}
+
+/* IMAGE */
+.image-section {
+  width: 80%;
+  display: flex;
+  justify-content: center;
+}
+
+.image-section img {
+  max-width: 600px;
+  width: 100%;
+}
+
+.site-footer {
+  background: #000;
+  color: #fff;
+  padding: 80px 40px 30px;
+  position: relative;
+}
+
+.footer-container {
+  display: grid;
+  grid-template-columns: 1.5fr 1fr 1fr 1fr;
+  gap: 40px;
+  max-width: 1300px;
+  margin: auto;
+}
+
+.footer-brand img {
+  width: 150px;
+}
+
+.footer-col h4 {
+  margin-bottom: 15px;
+  font-size: 18px;
+}
+
+.footer-col ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-col ul li {
+  margin-bottom: 10px;
+}
+
+.footer-col ul li a {
+  color: #ccc;
+  text-decoration: none;
+  transition: 0.3s;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.footer-col ul li a:hover {
+  color: #ff2b85;
+}
+.footer-col h4 {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.social-icons a {
+  font-size: 20px;
+  margin-right: 15px;
+  color: #fff;
+  transition: 0.3s;
+}
+
+.social-icons a:hover {
+  color: #ff2b85;
+}
+
+.footer-bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 60px;
+  font-size: 14px;
+  border-top: 1px solid #222;
+  padding-top: 20px;
+}
+
+.footer-bottom a {
+  color: #fff;
+  text-decoration: none;
+  font-family: poppins;
+}
+.footer-bottom p {
+  font-family: poppins;
+}
+
+.scroll-top {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  background: #ff2b85;
+  color: #fff;
+  border: none;
+  width: 45px;
+  height: 45px;
+  border-radius: 8px;
+  font-size: 20px;
+  cursor: pointer;
+}
+/* Media Query section */
+/* ============================= */
+/* RESPONSIVE DESIGN */
+/* ============================= */
+
+/* Tablets */
+@media (max-width: 1024px) {
+
+  .container {
+    flex-direction: column;
+    gap: 40px;
+  }
+
+  .form-section,
+  .image-section {
+    width: 100%;
+  }
+
+  .image-section img {
+    max-width: 450px;
+  }
+
+  .footer-container {
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+  }
+
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+
+  /* NAVBAR */
+  .navbar {
+    flex-direction: column;
+    gap: 15px;
+    padding: 20px;
+  }
+
+  .nav-links {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+  }
+
+  .nav-links a {
+    font-size: 13px;
+  }
+
+  .nav-right {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .location-btn {
+    width: 100%;
+    text-align: center;
+  }
+
+  /* MAIN SECTION */
+  .main {
+    padding: 20px;
+  }
+
+  .name-fields {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  h2 {
+    text-align: center;
+  }
+
+  button {
+    width: 100%;
+  }
+
+  /* IMAGE */
+  .image-section img {
+    max-width: 320px;
+  }
+
+  /* FOOTER */
+  .footer-container {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+
+  .social-icons {
+    justify-content: center;
+  }
+
+  .footer-bottom {
+    flex-direction: column;
+    gap: 10px;
+    text-align: center;
+  }
+
+}
+
+/* Extra small devices */
+@media (max-width: 480px) {
+
+  .nav-links a {
+    font-size: 12px;
+  }
+
+  input,
+  textarea {
+    font-size: 13px;
+  }
+
+  .scroll-top {
+    width: 40px;
+    height: 40px;
+    font-size: 16px;
+  }
+}
+
+</style>
+<body>
+
+  <!-- NAV -->
+  <header class="navbar">
+    <div class="logo">
+      <img src="./assets/logo 17.png" alt="Foodpanda Logo">
+    </div>
+
+    <nav class="nav-links">
+      <a href='index.html'>Home</a>
+      <a href='about.html'>About</a>
+      <a href='newsroom.html'>Newsroom</a>
+      <a href='partners.html'>Partners</a>
+      <a href='pandaads.html' target='_blank'>panda ads</a>
+      <a href="contact.html">Contact</a>
+      <a href='careers.html' target='_blank'>Careers</a>
+    </nav>
+
+    <div class="nav-right">
+      <button class="location-btn">Choose location</button>
+      <span class="search"><i class="fa-solid fa-magnifying-glass"></i></span>
+    </div>
+  </header>
+
+
+  <div class="contact">
+    <img src="./assets/contact-img.PNG" alt="">
+  </div>
+
+<section class="main">
+  
+<div class="container">
+  <!-- LEFT SIDE -->
+  <div class="form-section">
+    <h2>Contact form</h2>
+
+    <form>
+      <label>Name <span>*</span></label>
+      <div class="name-fields">
+        <div>
+          <input type="text" required>
+          <small>First</small>
+        </div>
+        <div>
+          <input type="text" required>
+          <small>Last</small>
+        </div>
+      </div>
+
+      <label>Email <span>*</span></label>
+      <input type="email" required>
+
+      <label>Your message <span>*</span></label>
+      <textarea rows="6" required></textarea>
+
+      <button type="submit">Submit</button>
+    </form>
+  </div>
+
+
+
+
+
+  <!-- RIGHT SIDE -->
+  <div class="image-section">
+    <img src="./assets/contact-img-1.PNG" alt="Mascot">
+  </div>
+</div>
+</section>
+
+
+  <footer class="site-footer">
+  <div class="footer-container">
+
+    <!-- Logo -->
+    <div class="footer-brand">
+      <img src="./assets/logo 17.png" alt="foodpanda logo">
+    </div>
+
+    <!-- Navigate -->
+    <div class="footer-col">
+      <h4>Navigate</h4>
+      <ul>
+        <li><a href='index.html'>Home</a></li>
+        <li><a href='about.html'>About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href='newsroom.html'>Newsroom</a></li>
+      </ul>
+    </div>
+
+    <!-- Collaborate -->
+    <div class="footer-col">
+      <h4>Collaborate</h4>
+      <ul>
+        <li><a href="#">Explore careers</a></li>
+        <li><a href="#">Become a rider</a></li>
+        <li><a href="#">Feed your team</a></li>
+      </ul>
+    </div>
+
+    <!-- Social -->
+    <div class="footer-col social">
+      <h4>Follow us on</h4>
+      <div class="social-icons">
+        <a href="#"><i class="fab fa-facebook-f"></i></a>
+        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+        <a href="#"><i class="fab fa-instagram"></i></a>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- Bottom Bar -->
+  <div class="footer-bottom">
+    <p>Copyright © 2025 foodpanda</p>
+    <a href="#">Privacy Policy</a>
+  </div>
+
+  <!-- Scroll to Top -->
+  <button class="scroll-top" onclick="window.scrollTo({top:0,behavior:'smooth'})">
+    ↑
+  </button>
+</footer>
+
+</body>
+</html>

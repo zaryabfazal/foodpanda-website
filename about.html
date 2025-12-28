@@ -1,0 +1,713 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+        <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <!-- Bootstrap Icon Link -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
+    <!-- Animation Link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css">
+
+    <link rel="shortcut icon" href="./assets/Technical Education & Vocational Training Authority (TEVTA) – Technical Education & Vocational Training Authority (TEVTA)_files/tevta_header_logo.png" type="image/x-icon">
+    <title>Foodpanda | About</title>
+</head>
+<style>
+    * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body h3  {
+   font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+
+}
+
+body p {
+  font-family: poppins;
+}
+
+/* NAV */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 40px;
+  background: #fff;
+  position: relative;
+  z-index: 10;
+}
+
+div.about img{
+  width: 100%;
+}
+
+
+.logo img {
+  height: 32px;
+}
+
+.nav-links a {
+  margin: 0 12px;
+  text-decoration: none;
+  color: #000;
+  font-size: 14px;
+  font-weight: bold;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.nav-right {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.location-btn {
+  background: #ff2b85;
+  color: #fff;
+  border: none;
+  padding: 15px 20px 15px 20px;
+  border-radius: 24px;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+.location-btn:hover {
+  color: #f5c4d9;
+}
+.search i {
+  font-size: 20px;
+}
+
+.content {
+  padding-left: 80px;
+  margin-bottom: 80px;
+}
+
+.content h3{
+  font-size: 42px;
+  font-weight: 700;
+  margin-bottom: 20px;
+  margin-top: 40px;
+}
+.content p {
+  max-width: 65%;
+}
+
+.customer-section {
+  padding: 80px 0;
+  background-color: hsl(0, 20%, 94%);
+}
+
+.container {
+  max-width: 1200px;
+  margin: auto;
+  padding: 0 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 60px;
+  
+}
+
+/* LEFT CONTENT */
+.card-content {
+  flex: 1;
+}
+
+.card-content h2 {
+  font-size: 48px;
+  font-weight: 700;
+  margin-bottom: 20px;
+  color: #000;
+}
+
+.card-content p {
+  max-width: 480px;
+  font-size: 16px;
+  line-height: 1.7;
+  color: #333;
+}
+
+/* RIGHT IMAGE */
+.image-box {
+  flex: 1;
+}
+
+.image-box img {
+  width: 80%;
+  border-radius: 8px;
+  object-fit: cover;
+}
+
+
+
+
+
+
+.values-section {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 40px 20px;
+  text-align: center;
+}
+
+h1 {
+  font-size: 42px;
+  font-weight: 700;
+  margin-bottom: 40px;
+}
+
+.values-container {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: center;
+}
+
+.row {
+  display: flex;
+  gap: 16px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+/* BUTTON BASE */
+.value-btn {
+  padding: 12px 22px;
+  border-radius: 999px;
+  font-size: 1rem;
+  font-weight: 800;
+  background: transparent;
+  cursor: pointer;
+  transition: all 0.25s ease;
+  white-space: nowrap;
+}
+
+/* OUTLINE BUTTON */
+.value-btn.outline {
+  color: #ff2b78;
+  border: 2px solid #ff2b78;
+}
+
+.value-btn.outline:hover {
+  background: #ff2b78;
+  color: #ffffff;
+}
+
+/* MOBILE */
+@media (max-width: 600px) {
+  .value-btn {
+    font-size: 0.9rem;
+    padding: 10px 18px;
+  }
+}
+
+
+
+
+.about-btn {
+  background: #e21b70;
+  color: #fff;
+  border: none;
+  padding: 14px 34px;
+  border-radius: 30px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: 0.3s;
+  margin-top: 20px;
+}
+.about-btn:hover {
+  background: #eb5b99;
+}
+
+
+
+
+
+
+
+
+.site-footer {
+  background: #000;
+  color: #fff;
+  padding: 80px 40px 30px;
+  position: relative;
+}
+
+.footer-container {
+  display: grid;
+  grid-template-columns: 1.5fr 1fr 1fr 1fr;
+  gap: 40px;
+  max-width: 1300px;
+  margin: auto;
+}
+
+.footer-brand img {
+  width: 150px;
+}
+
+.footer-col h4 {
+  margin-bottom: 15px;
+  font-size: 18px;
+}
+
+.footer-col ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-col ul li {
+  margin-bottom: 10px;
+}
+
+.footer-col ul li a {
+  color: #ccc;
+  text-decoration: none;
+  transition: 0.3s;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.footer-col ul li a:hover {
+  color: #ff2b85;
+}
+.footer-col h4 {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.social-icons a {
+  font-size: 20px;
+  margin-right: 15px;
+  color: #fff;
+  transition: 0.3s;
+}
+
+.social-icons a:hover {
+  color: #ff2b85;
+}
+
+.footer-bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 60px;
+  font-size: 14px;
+  border-top: 1px solid #222;
+  padding-top: 20px;
+}
+
+.footer-bottom a {
+  color: #fff;
+  text-decoration: none;
+  font-family: poppins;
+}
+.footer-bottom p {
+  font-family: poppins;
+}
+
+.scroll-top {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  background: #ff2b85;
+  color: #fff;
+  border: none;
+  width: 45px;
+  height: 45px;
+  border-radius: 8px;
+  font-size: 20px;
+  cursor: pointer;
+}
+/* Media Query section */
+@media (max-width: 600px) {
+
+  /* NAVBAR */
+  .navbar {
+    flex-direction: column;
+    gap: 15px;
+    padding: 15px 20px;
+  }
+
+  .nav-links {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+  }
+
+  .nav-links a {
+    font-size: 13px;
+  }
+
+  .nav-right {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  /* HERO IMAGE */
+  section img {
+    width: 100%;
+    height: auto;
+  }
+
+  /* CONTENT TEXT */
+  .content {
+    padding: 0 20px;
+    margin-bottom: 50px;
+  }
+
+  .content h3 {
+    font-size: 28px;
+    line-height: 1.3;
+  }
+
+  .content p {
+    max-width: 100%;
+    font-size: 14px;
+  }
+
+  /* FLEX SECTIONS */
+  .container {
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  .card-content h2 {
+    font-size: 30px;
+  }
+
+  .card-content p {
+    max-width: 100%;
+    font-size: 14px;
+  }
+
+  /* VALUES */
+  h1 {
+    font-size: 30px;
+  }
+
+  .row {
+    flex-direction: column;
+  }
+
+  /* FOOTER */
+  .footer-container {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+
+  .footer-bottom {
+    flex-direction: column;
+    gap: 10px;
+    text-align: center;
+  }
+
+  .scroll-top {
+    right: 15px;
+    bottom: 15px;
+  }
+}
+@media (max-width: 992px) {
+
+  .container {
+    gap: 40px;
+  }
+
+  .content {
+    padding-left: 40px;
+  }
+
+  .content h3 {
+    font-size: 34px;
+  }
+
+  .card-content h2 {
+    font-size: 36px;
+  }
+
+  .footer-container {
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+  }
+}
+
+
+</style>
+<body>
+
+  <!-- NAV -->
+  <header class="navbar">
+    <div class="logo">
+      <img src="./assets/logo 17.png" alt="Foodpanda Logo">
+    </div>
+
+    <nav class="nav-links">
+      <a href='index.html'>Home</a>
+      <a href="about.html">About</a>
+      <a href='newsroom.html'>Newsroom</a>
+      <a href='partners.html'>Partners</a>
+      <a href='pandaads.html' target='_blank'>panda ads</a>
+      <a href='contact.html'>Contact</a>
+      <a href='careers.html' target='_blank'>Careers</a>
+    </nav>
+
+    <div class="nav-right">
+      <button class="location-btn">Choose location</button>
+      <span class="search"><i class="fa-solid fa-magnifying-glass"></i></span>
+    </div>
+  </header>
+
+
+  <section>
+    <div class="about">
+      <img src="./assets/about-img.png" alt="">
+    </div>
+  </section>
+
+
+  <section>
+    <div class="content">
+      <h3>From food delivery to your <br> daily convenience companion.</h3>
+      <p>A subsidiary of Delivery Hero, foodpanda launched in Singapore in 2014 as a food delivery platform.  Dedicated to helping customers get their tasty favourites fast, it quickly won the hearts and minds of customers in APAC. <br><br>
+
+      Powered by tech and operational excellence, foodpanda has been growing its quick-commerce footprint in more than 400 cities across 11 markets in Asia – Singapore, Hong Kong, Thailand, Malaysia, Pakistan, Taiwan, Philippines, Bangladesh, Laos, Cambodia, and Myanmar. <br><br>
+
+       Thanks to dedicated partners, riders, and a team united by shared values,  foodpanda is now providing millions with a convenient way to get food and groceries in a few taps.</p>
+    </div>
+  </section>
+
+<!-- section 02 -->
+    <section class="container-fluid mb-5" style="background-color: #e5e7eb;">
+        <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <!-- slide 01 -->
+                <div class="carousel-item active" data-bs-interval="10000">
+                    <div class="container d-flex justify-content-around gap-2  py-4">
+                        <div>
+                            <h3 class="fs-2 fw-bold">
+                                Customers come <br> first
+                            </h3>
+                            <p>We’re far more than just swift food delivery. <br> foodpanda enables customers to pick up
+                                their
+                                <br>takeaway
+                                meals, skip boring grocery trips and send <br>parcels. Customer needs are the core and
+                                centre of <br>
+                                our
+                                business. Download the app to experience true <br>convenience.
+                            </p>
+                        </div>
+                        <div>
+                            <img class="img-fluid"
+                                src="https://www.foodpanda.com/wp-content/uploads/2025/07/fp-about-3.webp" alt=""
+                                width="600">
+                        </div>
+                    </div>
+                </div>
+                <!-- slide 02 -->
+                <div class="carousel-item" data-bs-interval="2000">
+                    <div class="container d-flex justify-content-around gap-2  py-4">
+                        <div>
+                            <h3 class="fs-2 fw-bold">
+                                Growing with <br> our partners
+                            </h3>
+                            <p>We’re far more than just swift food delivery. <br> foodpanda enables customers to pick up
+                                their
+                                <br>takeaway
+                                meals, skip boring grocery trips and send <br>parcels. Customer needs are the core and
+                                centre of <br>
+                                our
+                                business. Download the app to experience true <br>convenience.
+                            </p>
+                        </div>
+                        <div>
+                            <img class="img-fluid"
+                                src="https://www.foodpanda.com/wp-content/uploads/2025/07/fp-about-2.webp" alt=""
+                                width="450">
+                        </div>
+                    </div>
+                </div>
+                <!-- slide 03 -->
+                <div class="carousel-item">
+                    <div class="container d-flex justify-content-around gap-2  py-4">
+                        <div>
+                            <h3 class="fs-2 fw-bold">
+                                Our riders are <br> our heroes
+                            </h3>
+                            <p>We’re far more than just swift food delivery. <br> foodpanda enables customers to pick up
+                                their
+                                <br>takeaway
+                                meals, skip boring grocery trips and send <br>parcels. Customer needs are the core and
+                                centre of <br>
+                                our
+                                business. Download the app to experience true <br>convenience.
+                            </p>
+                        </div>
+                        <div>
+                            <img class="img-fluid"
+                                src="https://www.foodpanda.com/wp-content/uploads/2025/07/fp-about-4.webp" alt=""
+                                width="500">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+      </section>
+
+  <section class="values-section">
+    <h1>Our values</h1>
+
+    <div class="values-container">
+
+      <button class="value-btn outline">
+        prioritise, decide, deliver
+      </button>
+
+      <div class="row">
+        <button class="value-btn outline">
+          start with customer, end with customer
+        </button>
+        <button class="value-btn outline">
+          own it end-to-end
+        </button>
+      </div>
+
+      <div class="row">
+        <button class="value-btn outline">
+          challenge the status quo
+        </button>
+        <button class="value-btn outline">
+          we before me
+        </button>
+      </div>
+
+      <button class="value-btn outline">
+        plan for tomorrow, focus on today
+      </button>
+
+    </div>
+  </section>
+
+
+
+  <section class="customer-section" style="background-color: #fff;">
+  <div class="container">
+
+    <!-- LEFT CONTENT -->
+    <div class="card-content">
+      <h2>prioritise, decide, deliver</h2>
+      <p>
+       We are disciplined about focusing on what matters. When we face uncertainty, we put considered thought behind our actions and continue to deliver because it is only through execution that we learn, iterate, and improve.
+      </p>
+    </div>
+
+    <!-- RIGHT IMAGE -->
+    <div class="image-box">
+      <img src="./assets/about2.PNG" alt="Customers service">
+    </div>
+
+  </div>
+</section>
+
+<section class="customer-section">
+  <div class="container">
+
+    <!-- LEFT CONTENT -->
+    <div class="card-content">
+      <h2>Join the panda team!</h2>
+      <p>
+        Hungry for growth? There’s a seat at our table! We’re looking for the best in tech, marketing, sales, logistics, account management and more. Explore career opportunities at foodpanda now.
+      </p>
+      <button class="about-btn">About</button>
+    </div>
+
+    <!-- RIGHT IMAGE -->
+    <div class="image-box">
+      <img src="./assets/about3.PNG" alt="Customers service">
+    </div>
+
+  </div>
+</section>
+
+
+
+
+  
+<footer class="site-footer">
+  <div class="footer-container">
+
+    <!-- Logo -->
+    <div class="footer-brand">
+      <img src="/assets/logo 17.png" alt="foodpanda logo">
+    </div>
+
+    <!-- Navigate -->
+    <div class="footer-col">
+      <h4>Navigate</h4>
+      <ul>
+        <li><a href='index.html'>Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href='contact.html'>Contact</a></li>
+        <li><a href='newsroom.html'>Newsroom</a></li>
+      </ul>
+    </div>
+
+    <!-- Collaborate -->
+    <div class="footer-col">
+      <h4>Collaborate</h4>
+      <ul>
+        <li><a href="#">Explore careers</a></li>
+        <li><a href="#">Become a rider</a></li>
+        <li><a href="#">Feed your team</a></li>
+      </ul>
+    </div>
+
+    <!-- Social -->
+    <div class="footer-col social">
+      <h4>Follow us on</h4>
+      <div class="social-icons">
+        <a href="#"><i class="fab fa-facebook-f"></i></a>
+        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+        <a href="#"><i class="fab fa-instagram"></i></a>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- Bottom Bar -->
+  <div class="footer-bottom">
+    <p>Copyright © 2025 foodpanda</p>
+    <a href="#">Privacy Policy</a>
+  </div>
+
+  <!-- Scroll to Top -->
+  <button class="scroll-top" onclick="window.scrollTo({top:0,behavior:'smooth'})">
+    ↑
+  </button>
+</footer>
+
+<script src="	https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>

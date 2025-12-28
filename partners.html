@@ -1,0 +1,810 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+        <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <!-- Bootstrap Icon Link -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
+    <!-- Animation Link -->
+     <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link rel="shortcut icon" href="./assets/Technical Education & Vocational Training Authority (TEVTA) – Technical Education & Vocational Training Authority (TEVTA)_files/tevta_header_logo.png" type="image/x-icon">
+    <title>Foodpanda | Partners</title>
+</head>
+<style>
+     * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* NAV */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 40px;
+  background: #fff;
+  position: relative;
+  z-index: 10;
+}
+
+div.partner img{
+  width: 100%;
+}
+
+.logo img {
+  height: 32px;
+}
+
+.nav-links a {
+  margin: 0 12px;
+  text-decoration: none;
+  color: #000;
+  font-size: 14px;
+  font-weight: bold;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.nav-right {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.location-btn {
+  background: #ff2b85;
+  color: #fff;
+  border: none;
+  padding: 15px 20px 15px 20px;
+  border-radius: 24px;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+.location-btn:hover {
+  background: #eb5b99;
+}
+.search i {
+  font-size: 20px;
+}
+
+.content h1,
+.content p {
+  text-align: center;
+}
+
+
+.content h1 {
+  padding: 20px;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-weight: 700;
+  font-size: 42px;
+}
+.content p {
+  padding: 0 120px 0 120px;
+  padding-bottom: 20px;
+  font-family: poppins;
+}
+
+
+
+/* Center whole section */
+.country-section {
+  min-height: 60vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Grid for fixed rows */
+.country-grid {
+  display: grid;
+  grid-template-columns: repeat(4, auto);
+  gap: 24px;
+  justify-content: center;
+}
+
+/* Pills */
+.pill {
+  padding: 10px 22px;
+  border-radius: 30px;
+  border: 2px solid #ff2b7a;
+  background: transparent;
+  color: #ff2b7a;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+
+.pill:hover {
+  background: #ff2b78;
+  color: #ffffff;
+}
+
+
+
+
+/* Section */
+.hero {
+  padding: 80px 0;
+  background: #fff;
+}
+
+/* Container */
+.hero-container {
+  max-width: 1200px;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 60px;
+}
+
+/* Left content */
+.hero-content {
+  max-width: 520px;
+}
+
+.hero-content h1 {
+  font-size: 42px;
+  font-weight: 700;
+  line-height: 1.2;
+  color: #000;
+  margin-bottom: 20px;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.hero-content p {
+  font-size: 16px;
+  line-height: 1.6;
+  margin-bottom: 30px;
+  font-family: poppins;
+}
+
+/* Button */
+.hero-btn {
+  display: inline-block;
+  background: #ff2b85;
+  color: #fff;
+  padding: 12px 28px;
+  border-radius: 30px;
+  font-weight: 600;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.hero-btn:hover {
+  background: #e02575;
+}
+
+/* Right Image */
+.hero-image img {
+  width: 100%;
+  max-width: 520px;
+  border-radius: 6px;
+}
+
+
+
+.why-partner {
+  padding: 80px 0;
+  background: #fff;
+}
+
+.container {
+  max-width: 1200px;
+  margin: auto;
+}
+
+.section-title {
+  font-size: 42px;
+  font-weight: 700;
+  line-height: 1.2;
+  color: #000;
+  margin-bottom: 20px;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+
+}
+
+/* Grid */
+.card-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+}
+
+/* Card */
+.card {
+  position: relative;
+  height: 420px;
+  overflow: hidden;
+  border-radius: 4px;
+}
+
+.card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.site-footer {
+  background: #000;
+  color: #fff;
+  padding: 80px 40px 30px;
+  position: relative;
+}
+
+.footer-container {
+  display: grid;
+  grid-template-columns: 1.5fr 1fr 1fr 1fr;
+  gap: 40px;
+  max-width: 1300px;
+  margin: auto;
+}
+
+.footer-brand img {
+  width: 150px;
+}
+
+.footer-col h4 {
+  margin-bottom: 15px;
+  font-size: 18px;
+}
+
+.footer-col ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-col ul li {
+  margin-bottom: 10px;
+}
+
+.footer-col ul li a {
+  color: #ccc;
+  text-decoration: none;
+  transition: 0.3s;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.footer-col ul li a:hover {
+  color: #ff2b85;
+}
+.footer-col h4 {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.social-icons a {
+  font-size: 20px;
+  margin-right: 15px;
+  color: #fff;
+  transition: 0.3s;
+}
+
+.social-icons a:hover {
+  color: #ff2b85;
+}
+
+.footer-bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 60px;
+  font-size: 14px;
+  border-top: 1px solid #222;
+  padding-top: 20px;
+}
+
+.footer-bottom a {
+  color: #fff;
+  text-decoration: none;
+  font-family: poppins;
+}
+.footer-bottom p {
+  font-family: poppins;
+}
+
+.scroll-top {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  background: #ff2b85;
+  color: #fff;
+  border: none;
+  width: 45px;
+  height: 45px;
+  border-radius: 8px;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+
+/* Media Query section */
+@media (max-width: 480px) {
+
+   /* NAVBAR */
+  .navbar {
+    flex-direction: column;
+    gap: 15px;
+    padding: 15px 20px;
+  }
+
+  .nav-links {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+  }
+
+  .nav-links a {
+    font-size: 13px;
+  }
+
+  .nav-right {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  /* CONTENT */
+  .content h1 {
+    font-size: 28px;
+    padding: 15px;
+  }
+
+  .content p {
+    padding: 0 20px 20px;
+    font-size: 14px;
+  }
+
+  /* COUNTRY BUTTONS */
+  .country-grid {
+    grid-template-columns: repeat(2, auto);
+    gap: 16px;
+  }
+
+  .pill {
+    font-size: 14px;
+    padding: 8px 18px;
+  }
+
+  /* HERO SECTION */
+  .hero-container {
+    flex-direction: column;
+    text-align: center;
+    gap: 40px;
+    padding: 0 20px;
+  }
+
+  .hero-content h1 {
+    font-size: 30px;
+  }
+
+  .hero-image img {
+    max-width: 100%;
+  }
+
+  /* WHY PARTNER */
+  .section-title {
+    font-size: 30px;
+    padding: 0 20px;
+  }
+
+  .card-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .card {
+    height: 320px;
+  }
+
+  /* FOOTER */
+  .footer-container {
+    grid-template-columns: 1fr;
+    gap: 30px;
+    text-align: center;
+  }
+
+  .footer-bottom {
+    flex-direction: column;
+    gap: 10px;
+    text-align: center;
+  }
+
+}
+
+
+@media (max-width: 768px) {
+
+  /* NAVBAR */
+  .navbar {
+    flex-direction: column;
+    gap: 15px;
+    padding: 15px 20px;
+  }
+
+  .nav-links {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+  }
+
+  .nav-links a {
+    font-size: 13px;
+  }
+
+  .nav-right {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .hero-container {
+    flex-direction: column;
+    gap: 50px;
+    padding: 0 30px;
+  }
+
+  .country-grid {
+    grid-template-columns: repeat(3, auto);
+  }
+
+  .card-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .footer-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+}
+
+
+</style>
+<body>
+
+  <!-- NAV -->
+  <header class="navbar">
+    <div class="logo">
+      <img src="/assets/logo 17.png" alt="Foodpanda Logo">
+    </div>
+
+    <nav class="nav-links">
+      <a href='index.html'>Home</a>
+      <a href='about.html'>About</a>
+      <a href='newsroom.html'>Newsroom</a>
+      <a href="partners.html">Partners</a>
+      <a href='pandaads.html' target='_blank'>panda ads</a>
+      <a href='contact.html'>Contact</a>
+      <a href='careers.html' target='_blank'>Careers</a>
+    </nav>
+
+    <div class="nav-right">
+      <button class="location-btn">Choose location</button>
+      <span class="search"><i class="fa-solid fa-magnifying-glass"></i></span>
+    </div>
+  </header>
+
+
+  <div class="partner">
+    <img src="./assets/partner-img.png" alt="">
+  </div>
+
+<section>
+  <div class="content">
+    <h1>Become a restaurant or local shop partner</h1>
+    <p>Take your business to new heights by partnering with foodpanda, the leading delivery service trusted by businesses large and small.
+    We dare to always go further, helping you reach untapped customer bases, boost order volume, and drive more sales.</p>
+  </div>
+</section>
+
+
+<section class="country-section">
+  <div class="country-grid">
+    <button class="pill">Malaysia</button>
+    <button class="pill">Philippines</button>
+    <button class="pill">Bangladesh</button>
+    <button class="pill">Hong Kong</button>
+
+    <button class="pill">Pakistan</button>
+    <button class="pill">Singapore</button>
+    <button class="pill">Taiwan</button>
+    <button class="pill">Cambodia</button>
+
+    <button class="pill">Laos</button>
+    <button class="pill">Myanmar</button>
+  </div>
+</section>
+
+<section class="hero">
+  <div class="hero-container">
+
+    <!-- Left Content -->
+    <div class="hero-content">
+      <h1>
+        Are you ready to expand your reach<br>
+        and connect with new customers?
+      </h1>
+
+      <p>
+        Let more customers find you. Partner with foodpanda and increase online visibility.
+      </p>
+
+      <a href="#" class="hero-btn">Get Started</a>
+    </div>
+
+    <!-- Right Image -->
+    <div class="hero-image">
+      <img src="./assets/partner-img-1.PNG" alt="Food Dish">
+    </div>
+
+  </div>
+</section>
+
+
+
+
+
+<section class="why-partner">
+  <div class="container">
+
+    <h2 class="section-title">Why partner with foodpanda?</h2>
+
+    <div class="card-grid">
+
+      <div class="card">
+        <img src="./assets/partner-card-1.PNG" alt="Reach new customers">
+      </div>
+
+      <div class="card">
+        <img src="./assets/partner-card-2.PNG" alt="Boost your volume">
+      </div>
+
+      <div class="card">
+        <img src="./assets/partner-card-3.PNG" alt="Drive more sales">
+      </div>
+
+      <div class="card">
+        <img src="./assets/partner-card-4.PNG" alt="Increase customer satisfaction">
+      </div>
+
+    </div>
+
+  </div>
+</section>
+
+<section>
+
+    <style>
+        /* CSS Start */
+        body {
+            font-family: Arial;
+            background: #f0f2f5;
+            padding: 40px 20px;
+        }
+        
+        .grid-section {
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+        
+        .section-title {
+            text-align: center;
+            font-size: 2.5rem;
+            margin-bottom: 50px;
+            color: #333;
+        }
+        
+        /* MAIN GRID - 4 BOXES IN ONE ROW */
+        .grid-container {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr); /* 4 Columns */
+            gap: 25px;
+        }
+        
+        .grid-box {
+            background: white;
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+        }
+        
+        .grid-box img {
+            width: 30%;
+            height: auto;
+            object-fit: cover;
+        }
+        
+        .content {
+            padding: 20px;
+        }
+        
+        /* Responsive */
+        @media (max-width: 992px) {
+            .grid-container {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+        
+        @media (max-width: 768px) {
+            .grid-container {
+                grid-template-columns: 1fr;
+            }
+        }
+        /* CSS End */
+    </style>
+
+    <div class="grid-section">
+        <h2 class="section-title">How does it work?</h2>
+        
+        <div class="grid-container">
+            
+            <div class="grid-box">
+                <img src="./assets/01.webp" alt="Service 1">
+                <div class="content">
+                    <h3>The customer adds their delivery address in the app or on the website and then selects a store or restaurant in their area.</h3>
+                    <p></p>
+                    
+                </div>
+            </div>
+            
+            <div class="grid-box">
+                <img src="./assets/02.webp" alt="Service 2">
+                <div class="content">
+                    <h3>You accept the order with the reading tablet and prepare it for the collection time.</h3>
+                    
+                </div>
+            </div>
+            
+            <div class="grid-box">
+                <img src="./assets/03.webp" alt="Service 3">
+                <div class="content">
+                    <h3>A rider will come to you at the specified time and collect the order. It is then delivered directly to the customer!</h3>
+                    
+                </div>
+            </div>
+            
+            <div class="grid-box">
+                <img src="./assets/04.webp" alt="Service 4">
+                <div class="content">
+                    <h3>Twice per month you receive payments for the orders you have received via foodora. You automatically receive a basis for the deposit and a detailed insight into your sales statistics.</h3>
+                    
+                </div>
+            </div>
+            
+        </div>
+    </div>
+  </section>
+
+<section>
+
+
+
+
+
+
+
+
+    <style>
+        .faq {width:500px; margin:50px auto;}
+        h2 {color:#333;}
+        .q {background:#eee; padding:10px; margin:5px 0; cursor:pointer;}
+        .a {padding:10px; display:none;}
+        .active .a {display:block;}
+    </style>
+
+
+<div class="faq">
+    <h2>Have more questions? Check it out here</h2>
+    
+    <div class="item">
+        <div class="q" onclick="this.parentElement.classList.toggle('active')">
+            How can I receive orders?
+        </div>
+        <div class="a">
+            There are two ways to receive orders. Via a tablet, or if you have some kind of restaurant software (POS provider), it is also possible to connect it. In this case, indicate this during the connection process.
+        </div>
+    </div>
+    
+    <div class="item">
+        <div class="q" onclick="this.parentElement.classList.toggle('active')">
+            Are there any costs if I register on the site?
+        </div>
+        <div class="a">
+            There is no cost for registering on the site. foodpanda only charges a commission if a sale has taken place. So you only have to pay when you sell something.
+        </div>
+    </div>
+    
+    <div class="item">
+        <div class="q" onclick="this.parentElement.classList.toggle('active')">
+            What are the opening hours like?
+        </div>
+        <div class="a">
+            oose your specific opening hours and temporarily close our service if you have a lot to do. We are there when you need us!
+        </div>
+    </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+  
+</section>
+
+
+
+
+
+
+
+  <footer class="site-footer">
+  <div class="footer-container">
+
+    <!-- Logo -->
+    <div class="footer-brand">
+      <img src="/assets/logo 17.png" alt="foodpanda logo">
+    </div>
+
+    <!-- Navigate -->
+    <div class="footer-col">
+      <h4>Navigate</h4>
+      <ul>
+        <li><a href='/'>Home</a></li>
+        <li><a href='about.html'>About</a></li>
+        <li><a href='contact.html'>Contact</a></li>
+        <li><a href='newsroom.html'>Newsroom</a></li>
+      </ul>
+    </div>
+
+    <!-- Collaborate -->
+    <div class="footer-col">
+      <h4>Collaborate</h4>
+      <ul>
+        <li><a href="#">Explore careers</a></li>
+        <li><a href="#">Become a rider</a></li>
+        <li><a href="#">Feed your team</a></li>
+      </ul>
+    </div>
+
+    <!-- Social -->
+    <div class="footer-col social">
+      <h4>Follow us on</h4>
+      <div class="social-icons">
+        <a href="#"><i class="fab fa-facebook-f"></i></a>
+        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+        <a href="#"><i class="fab fa-instagram"></i></a>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- Bottom Bar -->
+  <div class="footer-bottom">
+    <p>Copyright © 2025 foodpanda</p>
+    <a href="#">Privacy Policy</a>
+  </div>
+
+  <!-- Scroll to Top -->
+  <button class="scroll-top" onclick="window.scrollTo({top:0,behavior:'smooth'})">
+    ↑
+  </button>
+</footer>
+</body>
+</html>

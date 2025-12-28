@@ -1,0 +1,791 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Panda Ads</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+
+    <!-- Icons -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        header {
+            width: 100%;
+            border-bottom: 1px solid #eee;
+        }
+
+        .navbar {
+            max-width: 1200px;
+            margin: auto;
+            padding: 18px 24px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .logo {
+            font-size: 36px;
+            font-weight: 600;
+            color: #ff2b7a;
+        }
+
+        .nav-links {
+            display: flex;
+            align-items: center;
+            gap: 32px;
+        }
+
+        .nav-links a {
+            text-decoration: none;
+            color: inherit;
+            font-size: 15px;
+            font-weight: 500;
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        }
+
+        .nav-links a:hover {
+            color: #ff2b7a;
+        }
+
+        .cta-btn {
+            background-color: #ff2b7a;
+            padding: 10px 20px;
+            border-radius: 30px;
+            text-decoration: none;
+            font-size: 14px;
+            font-weight: 500;
+            transition: 0.3s;
+        }
+
+        .cta-btn:hover {
+            background-color:  #eb5b99;;
+        }
+
+        .search-icon {
+            margin-left: 20px;
+            font-size: 18px;
+            cursor: pointer;
+        }
+
+       
+
+
+
+
+        .metrics-section {
+            max-width: 1200px;
+            margin: auto;
+            padding: 80px 20px;
+            text-align: center;
+        }
+
+        .metrics-title {
+            font-size: 42px;
+            font-weight: 900;
+            line-height: 1.2;
+            margin-bottom: 60px;
+        }
+
+        .metrics-grid {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap: 40px;
+        }
+
+        .metric-box {
+            flex: 1;
+        }
+
+        .metric-number {
+            font-size: 72px;
+            font-weight: 800;
+        }
+
+        .metric-label {
+            font-size: 25px;
+            font-weight: 700;
+            text-transform: lowercase;
+        }
+
+
+
+
+
+
+
+
+ .section2 {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 80px 20px;
+  text-align: center;
+}
+
+.section2 h1 {
+  font-size: 42px;
+  font-weight: 700;
+  margin-bottom: 70px;
+}
+
+.features {
+  display: flex;
+  justify-content: space-between;
+  gap: 40px;
+}
+
+.feature {
+  flex: 1;
+}
+
+.feature img {
+  width: 90px;
+  height: auto;
+  margin-bottom: 20px;
+}
+
+.feature h3 {
+  font-size: 22px;
+  font-weight: 700;
+  margin-bottom: 12px;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.feature p {
+  font-size: 16px;
+  line-height: 1.6;
+  color: #333333;
+  font-family: poppins;
+}
+
+
+
+
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 80px 20px;
+}
+
+.header {
+  text-align: center;
+  margin-bottom: 80px;
+}
+
+.header h1 {
+  font-size: 42px;
+  font-weight: 700;
+  line-height: 1.2;
+}
+
+.content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 60px;
+}
+
+.left {
+  flex: 1;
+}
+
+.left img {
+  width: 100%;
+  max-width: 520px;
+}
+
+.right {
+  flex: 1;
+}
+
+.right h2 {
+  font-size: 28px;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+.right p {
+  font-size: 16px;
+  line-height: 1.6;
+  color: #333333;
+  margin-bottom: 30px;
+  max-width: 420px;
+}
+
+.button {
+  display: inline-block;
+  padding: 14px 32px;
+  background: #ff2b7a;
+  color: #ffffff;
+  font-size: 16px;
+  font-weight: 600;
+  border-radius: 30px;
+  text-decoration: none;
+  transition: 0.3s;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.button:hover {
+  background: #eb5b99;
+}
+
+
+
+
+
+
+.offapp-wrapper{
+  max-width:1200px;
+  margin:0 auto;
+  padding:40px 20px;
+}
+
+.offapp-row{
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  gap:80px;
+}
+
+.offapp-content{
+  flex:1;
+}
+
+.offapp-title{
+  font-size:32px;
+  font-weight:700;
+  margin-bottom:20px;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.offapp-text{
+  font-size:16px;
+  line-height:1.6;
+  color:#333333;
+  max-width:420px;
+  margin-bottom:35px;
+  font-family: poppins;
+}
+
+.offapp-btn{
+  display:inline-block;
+  padding:14px 34px;
+  background:#ff2b7a;
+  color:#ffffff;
+  font-size:16px;
+  font-weight:600;
+  border-radius:30px;
+  text-decoration:none;
+  transition: 0.3s;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.offapp-btn:hover{
+  background:#eb5b99;
+}
+
+.offapp-image-box{
+  flex:1;
+  text-align:right;
+}
+
+.offapp-image{
+  width:100%;
+  max-width:520px;
+}
+
+
+
+
+
+.site-footer {
+  background: #000;
+  color: #fff;
+  padding: 80px 40px 30px;
+  position: relative;
+}
+
+.footer-container {
+  display: grid;
+  grid-template-columns: 1.5fr 1fr 1fr 1fr;
+  gap: 40px;
+  max-width: 1300px;
+  margin: auto;
+}
+
+.footer-brand img {
+  width: 150px;
+}
+
+.footer-col h4 {
+  margin-bottom: 15px;
+  font-size: 18px;
+}
+
+.footer-col ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-col ul li {
+  margin-bottom: 10px;
+}
+
+.footer-col ul li a {
+  color: #ccc;
+  text-decoration: none;
+  transition: 0.3s;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.footer-col ul li a:hover {
+  color: #ff2b85;
+}
+.footer-col h4 {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.social-icons a {
+  font-size: 20px;
+  margin-right: 15px;
+  color: #fff;
+  transition: 0.3s;
+}
+
+.social-icons a:hover {
+  color: #ff2b85;
+}
+
+.footer-bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 60px;
+  font-size: 14px;
+  border-top: 1px solid #222;
+  padding-top: 20px;
+}
+
+.footer-bottom a {
+  color: #fff;
+  text-decoration: none;
+  font-family: poppins;
+}
+.footer-bottom p {
+  font-family: poppins;
+}
+
+.scroll-top {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  background: #ff2b85;
+  color: #fff;
+  border: none;
+  width: 45px;
+  height: 45px;
+  border-radius: 8px;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+/* Media Query section */
+/* =========================
+   TABLET (≤1024px)
+========================= */
+@media (max-width: 1024px) {
+
+  .navbar {
+    padding: 16px 20px;
+  }
+
+  .metrics-title,
+  .section2 h1,
+  .header h1 {
+    font-size: 34px;
+  }
+
+  .metrics-grid {
+    gap: 30px;
+  }
+
+  .metric-number {
+    font-size: 60px;
+  }
+
+  .metric-label {
+    font-size: 22px;
+  }
+
+  .features {
+    gap: 30px;
+  }
+
+  .content,
+  .offapp-row {
+    gap: 40px;
+  }
+
+  .right p,
+  .offapp-text {
+    max-width: 100%;
+  }
+
+  .footer-container {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+/* =========================
+   MOBILE (≤768px)
+========================= */
+@media (max-width: 768px) {
+
+  /* Navbar */
+  .navbar {
+    flex-direction: column;
+    gap: 15px;
+    text-align: center;
+  }
+
+  .nav-links {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 16px;
+  }
+
+  .search-icon {
+    margin-left: 0;
+  }
+
+  /* Hero Image */
+  body > div img {
+    width: 100%;
+    height: auto;
+  }
+
+  /* Metrics */
+  .metrics-section {
+    padding: 60px 15px;
+  }
+
+  .metrics-title {
+    font-size: 26px;
+    margin-bottom: 40px;
+  }
+
+  .metrics-grid {
+    flex-direction: column;
+    gap: 40px;
+  }
+
+  .metric-number {
+    font-size: 48px;
+  }
+
+  .metric-label {
+    font-size: 20px;
+  }
+
+  /* Features */
+  .features {
+    flex-direction: column;
+    gap: 50px;
+  }
+
+  /* Content section */
+  .content {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .left img {
+    margin: auto;
+  }
+
+  .right h2 {
+    font-size: 24px;
+  }
+
+  /* Off-app sections */
+  .offapp-row {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .offapp-image-box {
+    text-align: center;
+  }
+
+  /* Footer */
+  .footer-container {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+
+  .footer-bottom {
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  .scroll-top {
+    width: 40px;
+    height: 40px;
+    right: 15px;
+    bottom: 15px;
+  }
+}
+
+/* =========================
+   SMALL PHONES (≤480px)
+========================= */
+@media (max-width: 480px) {
+
+  .logo {
+    font-size: 28px;
+  }
+
+  .metrics-title,
+  .section2 h1,
+  .header h1 {
+    font-size: 22px;
+  }
+
+  .metric-number {
+    font-size: 40px;
+  }
+
+  .feature h3 {
+    font-size: 20px;
+  }
+
+  .right h2,
+  .offapp-title {
+    font-size: 22px;
+  }
+
+  .button,
+  .offapp-btn,
+  .cta-btn {
+    width: 100%;
+    text-align: center;
+  }
+}
+
+    </style>
+</head>
+<body>
+
+<header>
+    <nav class="navbar">
+        <div class="logo">panda ads</div>
+
+        <div class="nav-links">
+            <a href="index.html">Home</a>
+            <a href="#">Solutions</a>
+            <a href="#">Resources</a>
+            <a href="#">Tools</a>
+            <a class='cta-btn' href='/contact'>Contact us</a>
+            <i class="fas fa-search search-icon"></i>
+        </div>
+    </nav>
+</header>
+
+<div>
+    <img src="./assets/panda-img.PNG" alt="">
+  </div>
+
+
+  <section class="metrics-section">
+    <h1 class="metrics-title">
+        Boost your brand with Asia’s largest<br>
+        food and grocery delivery network*
+    </h1>
+
+    <div class="metrics-grid">
+        <div class="metric-box">
+            <div class="metric-number">125M</div>
+            <div class="metric-label">app downloads</div>
+        </div>
+
+        <div class="metric-box">
+            <div class="metric-number">11</div>
+            <div class="metric-label">markets</div>
+        </div>
+
+        <div class="metric-box">
+            <div class="metric-number">400+</div>
+            <div class="metric-label">cities</div>
+        </div>
+    </div>
+</section>
+
+
+<section class="section2">
+  <h1>Power up your visibility & engagement</h1>
+
+  <div class="features">
+    <div class="feature">
+      <img src="./assets/panda-img-1.png" alt="Maximise your reach">
+      <h3>Maximise your reach</h3>
+      <p>
+        Amplify your campaign by connecting with your target customers
+        right where they shop
+      </p>
+    </div>
+
+    <div class="feature">
+      <img src="./assets/panda-img-2.png" alt="Engage high-value audiences">
+      <h3>Engage high-value audiences</h3>
+      <p>
+        Leverage our first-party data and advanced targeting
+        to connect with the right audience
+      </p>
+    </div>
+
+    <div class="feature">
+      <img src="./assets/panda-img-3.png" alt="Get personalised support">
+      <h3>Get personalised support</h3>
+      <p>
+        Achieve your marketing goals and drive growth
+        with personalised support, insights, and more
+      </p>
+    </div>
+  </div>
+</section>
+
+
+
+
+
+<section class="container">
+  <div class="header">
+    <h1>Customised retail media advertising<br>solutions for your brand’s needs</h1>
+  </div>
+
+  <div class="content">
+    <div class="left">
+      <img src="./assets/panda-img2.png" alt="In-app advertising mockup">
+    </div>
+
+    <div class="right">
+      <h2>In-app advertising</h2>
+      <p>
+        Increase brand visibility with native display ads across different
+        categories on the food delivery app
+      </p>
+      <a href="#" class="button">Explore solutions</a>
+    </div>
+  </div>
+</section>
+
+
+
+
+<section class="offapp-wrapper">
+  <div class="offapp-row">
+    <div class="offapp-content">
+      <h2 class="offapp-title">Off-app advertising</h2>
+      <p class="offapp-text">
+        Amplify your campaigns with foodpanda, from email marketing and
+        social media to rider bag ads and product sampling
+      </p>
+      <a href="#" class="offapp-btn">Explore solutions</a>
+    </div>
+
+    <div class="offapp-image-box">
+      <img src="./assets/panda-img3.png" alt="Off app advertising" class="offapp-image">
+    </div>
+  </div>
+</section>
+
+
+
+
+<section class="offapp-wrapper">
+  <div class="offapp-row">
+    <div class="offapp-image-box">
+      <img src="./assets/panda-img4.png" alt="Off app advertising" class="offapp-image">
+    </div>
+
+
+
+
+    <div class="offapp-content">
+      <h2 class="offapp-title">Strategic partnerships</h2>
+      <p class="offapp-text">
+        Amplify your campaigns with foodpanda, from email marketing and
+        social media to rider bag ads and product sampling
+      </p>
+      <a href="#" class="offapp-btn">Explore solutions</a>
+    </div>
+
+    
+  </div>
+</section>
+
+
+
+
+<footer class="site-footer">
+  <div class="footer-container">
+
+    <!-- Logo -->
+    <div class="footer-brand">
+      <img src="/assets/logo 17.png" alt="foodpanda logo">
+    </div>
+
+    <!-- Navigate -->
+    <div class="footer-col">
+      <h4>Navigate</h4>
+      <ul>
+        <li><a href='index.html'>Home</a></li>
+        <li><a href='about.html'>About</a></li>
+        <li><a href='contact.html'>Contact</a></li>
+        <li><a href='newsroom.html'>Newsroom</a></li>
+      </ul>
+    </div>
+
+    <!-- Collaborate -->
+    <div class="footer-col">
+      <h4>Collaborate</h4>
+      <ul>
+        <li><a href="#">Explore careers</a></li>
+        <li><a href="#">Become a rider</a></li>
+        <li><a href="#">Feed your team</a></li>
+      </ul>
+    </div>
+
+    <!-- Social -->
+    <div class="footer-col social">
+      <h4>Follow us on</h4>
+      <div class="social-icons">
+        <a href="#"><i class="fab fa-facebook-f"></i></a>
+        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+        <a href="#"><i class="fab fa-instagram"></i></a>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- Bottom Bar -->
+  <div class="footer-bottom">
+    <p>Copyright © 2025 foodpanda</p>
+    <a href="#">Privacy Policy</a>
+  </div>
+
+  <!-- Scroll to Top -->
+  <button class="scroll-top" onclick="window.scrollTo({top:0,behavior:'smooth'})">
+    ↑
+  </button>
+</footer>
+</body>
+</html>
